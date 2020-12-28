@@ -24,6 +24,7 @@ p:last-child {
 }
 p,
 .tmpl-post li,
+ul,
 img {
   max-width: 37.5em; /* 600px /16 */
 }
@@ -32,10 +33,10 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--white);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--lightgray);
 }
 main {
   padding: 1rem;
@@ -58,7 +59,11 @@ table td,
 table th {
   padding-right: 1em;
 }
-
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -223,4 +228,15 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+/* links */
+ul.rja-links {
+  list-style: none;
+  white-space: nowrap;
+  width: 100%;
+}
+.rja-links > li {
+  display: inline;
+  padding: 0.25em;
 }
