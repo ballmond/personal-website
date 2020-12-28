@@ -5,11 +5,103 @@ eleventyNavigation:
   order: 1
 ---
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<ul>
+  <li>🔗 <a href="https://www.linkedin.com/in/robertjallmond/">LinkedIn</a></li>
+  <li>📧 <a href="mailto:robert.j.allmond@gmail.com">robert.j.allmond@gmail.com</a></li>
+</ul>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<p>
+Independent technical consultant with 15+ years of experience in the software industry. As an independent consultant I work directly with some of the largest Clinical Research Organization's and software companies to provide data analysis and business intelligence dashboards. Working independently and on agile teams to
+</p>
+<hr/>
+<h2>skills</h2>
+<ul>
+  <li>sql</li>
+  <li>python</li>
+  <li>R</li>
+  <li>nodeJS</li>
+  <li>react</li>
+  <li>nextJS</li>
+  <li>svelte</li>
+  <li>serverless</li>
+  <li>postgreSQL</li>
+  <li>tableau</li>
+  <li>aws</li>
+  <li>ml</li>
+  <li>git</li>
+</ul>
+<hr/>
+<h2>work experience</h2>
+<h3>technical consultant</h3>
+<p><em>independent consultant, greater philadelphia area - 2016 to present</em></p>
+<p>Provide technical expertise for numerous Clinical Research Organizations and software companies, particularly focused on data analysis and Business Intelligence, primarily utilizing Python, SQL, and Tableau.  </p>
+<ul>
+  <li>Design, implement, and test custom Business Intelligence dashboards using Python, SQL, and Tableau.</li>
+  <li>Implement and test custom data APIs to facilitate detailed data analysis.</li>
+  <li>Ad hoc data analysis to analyze complex data anomalies and queries.</li>
+</ul>
+<h3>lead technical consultant</h3>
+<p><em>goBalto inc. (now part of Oracle) - 2015 to 2016</em></p>
+<p>Responsible for managing multiple accounts, overseeing the successful implementation and support of clinical trial study startup SaaS implementations, reporting, and data integration via RESTful API. Personally implementing dashboards and delivering analytics using Tableau, R, SQL, and Excel.</p>
+<ul>
+  <li>Line management of Customer Success Reporting and Integration team.</li>
+  <li>Establish Customer Success Reporting and Integration team SOPs and standard reports suite.</li>
+  <li>Develop reporting and integration forecasting model to predict team staffing requirements.</li>
+  <li>Implement detailed dashboards, data viz, and crosstabs using Tableau, R, SQL, and Excel.</li>
+</ul>
+<h3>director, project delivery</h3>
+<p><em>crf health (now Signant) - 2014</em></p>
+<p>Responsible for leading and motivating two agile teams, each consisting of 14-15 individuals, comprised of Project Managers, Project Coordinators, Project Assistants, and Application Specialists, compiling and monitoring team-based metrics to ensure deliverable quality and adherence to company Key Performance Indicators.</p>
+<p>In addition to managing two delivery teams, also responsible for the client relationship of multiple accounts. This includes working with contracts and pricing to review proposals, as well as working closely with Business Development to ensure customer satisfaction. For these accounts it is also my responsibility to ensure successful delivery of all projects, which includes attending project kickoff meetings, reviewing study design and documentation, and monitoring adherence to scope, timelines, and budget.</p>
+<ul>
+  <li>Effectively establish two new agile delivery teams consisting of Project Managers, Project Coordinators, Project Assistants, and Application Specialists.</li>
+  <li>Line management of approximately 30 direct reports, providing each regular performance feedback and yearly appraisals, monitoring conformance to company SOPs, and performing formal and informal training.</li>
+  <li>Support project teams in effectively implementing software for the mobile health solutions industry by lending guidance and expertise during project kickoff and throughout entire project life cycle.</li>
+  <li>Act as point of escalation for any project or individual on my teams, ensuring customer satisfaction.</li>
+  <li>Oversee and maintain positive customer relationship for my accounts. This included, but was not limited to, reviewing pricing proposals, attending bid defenses, supporting customer audits, running governance meetings, reporting account metrics to customer, ensuring successful implementation of all studies, and acting as escalation point for all project issues.</li>
+  <li>Establish and monitor weekly team metrics to identify issues and trends in order to mitigate issues and implement process improvements.</li>
+  <li>Report Company Key Performance Indicators (KPIs) directly to COO.</li>
+  <li>Recruit and train new hires to support company growth.</li>
+</ul>
+<h3>program director</h3>
+<p><em>crf health (now Signant) - 2012 to 2013</em></p>
+<p>Responsible for development and oversight of multi-million dollar programs with key accounts (top 10 Pharmaceutical companies), including the number one account with over 30 new studies in 2013, ensuring consistency in delivery of mobile health solutions across multiple programs, compliance to company SOPs, efficiencies in cost and effort levels across projects, and budget management.</p>
+<ul>
+  <li>Responsible for all quality deliverables throughout the study life-cycle from software design to system decommissioning, ensuring SOP compliance and adherence to applicable regulatory standards.</li>
+  <li>Leading and delivering complex mobile health solutions to exacting timelines, motivating globally dispersed project teams (including third party service providers), and assuming responsibility for all operational aspects of the study throughout the study life cycle.</li>
+  <li>Review of clinical protocols and statements of work, managing resource requirements, budget allocation and time against cost metrics.</li>
+  <li>Prepare and deliver effective presentations and customer training at global Investigator meetings.</li>
+  <li>Resolve escalations, working closely with the Clinical Study Team, Monitors and Site staff to ensure satisfaction and customer confidence.</li>
+</ul>
+<h3>manager, application developers, US</h3>
+<p><em>crf health (now Signant) - 2008 to 2012 </em></p>
+<p>Direct line management for all Application Specialists in the U.S., overseeing the team to ensure they are properly trained and conform to company and client SOPs. Also responsible for recruiting and hiring new Application Specialists to support dramatic company growth.</p>
+<ul>
+  <li>Formally train all members of the team on the complex design requirements of mobile health solutions.</li>
+  <li>Review and approve technical project documents.</li>
+  <li>Perform code reviews of all software implementations.</li>
+  <li>Develop best practices, templates, and documentation standards.</li>
+  <li>Identify and track key technical performance indicators to report to management.</li>
+  <li>Provide regular performance feedback, as well as conduct formal yearly performance reviews.</li>
+  <li>Act as technical point of escalation for individuals and projects.</li>
+</ul>
+<h3>application developer</h3>
+<p><em>crf health (now Signant) - 2006 to 2008</em></p>
+<p>Work directly with Project Manager and customer to gather requirements in order to implement robust mobile health solutions for the pharmaceutical clinical trial industry.</p>
+<ul>
+  <li>Implement patient-centric robust mobile health solutions, adhering to company and customer SOPs.</li>
+  <li>Perform formal trainings on technical implementation of mobile health solutions.</li>
+  <li>Act as mentor to new and junior Application Specialists.</li>
+</ul>
+<h3>software engineer</h3>
+<p><em>activant (now Epicor) - 2000 to 2006</em></p>
+<p>Responsible for gathering requirements, implementing, and testing mobile device business software for the electrical distribution industry, including warehouse management systems and order replenishment applications.</p>
+<ul>
+  <li>Gather requirements, implement, and test companies initial warehouse management system using J2EE and Java applets.</li>
+  <li>Work closely with Project Manager to implement and test order replenishment and quality tracking software for mobile devices.</li>
+  <li>Work closely with Project Manager to implement and test Electronic Data Interchange (EDI) software using Microsoft Visual Basic.</li>
+</ul>
+<hr/>
+<h2>education</h2>
+<h3>management information systems, b.a.</h3>
+<p><em>temple university, philadelphia, pa - 2000</em></p>
